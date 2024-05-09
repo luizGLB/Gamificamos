@@ -1,0 +1,482 @@
+@font-face {
+    font-family: "Rajdhani";
+    src: url(fonts/Rajdhani-Bold.ttf);
+}
+
+:root {
+    --azul-gamificamos: #110086;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 90vw;
+    max-width: 1800px;
+
+    margin: 0 auto;
+}
+
+.banner {
+
+    height: 100vh;
+
+    background: rgb(17, 0, 134);
+    background-image: linear-gradient(180deg, rgba(17, 0, 134, 1) 18%, rgba(255, 255, 255, 0.3) 100%, rgba(17, 0, 145, 1) 27%), url(img/fundo.png);
+
+    background-repeat: no-repeat;
+
+    background-position: 50% 60%;
+    background-color: #110086;
+
+}
+
+header {
+    height: 180px;
+}
+
+header button {
+    display: none;
+}
+
+header img {
+    width: 400px;
+
+
+}
+
+header .container-grid {
+    height: 100%;
+    width: 100vw;
+    max-width: 1762px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    width: 550px;
+
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+
+.menu a {
+    font-size: 18px;
+    font-family: 'Play';
+
+    color: white;
+
+    text-decoration: none;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration-color 500ms step-end;
+}
+
+.menu a:hover {
+    text-decoration-color: #FFE23E;
+    color: #FFE23E;
+
+    transition: 0.5s;
+    opacity: 1.1;
+
+}
+
+#sobre {
+    height: 400px;
+    padding: 100px 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+h2 {
+    font-family: "Play";
+    font-size: 28px;
+}
+
+#sobre p {
+    font-family: "Rajdhani";
+    font-size: 20px;
+
+    text-align: left;
+
+    line-height: 1.5;
+}
+
+.titulo {
+    height: 65px;
+}
+
+h2  {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    width: 190px;
+    height: 254px;
+    background: #0B0051;
+    color: white;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
+    font-family: "Play";
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+
+.cards:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    background: #FFE23E;
+    color: black;
+}
+
+.first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.cards:hover .first-content {
+    height: 0px;
+    opacity: 0;
+}
+
+.second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.1s;
+    font-family: "Rajdhani";
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+}
+
+.cards:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 13px;
+    transform: rotate(0deg);
+
+}
+
+#Cases {
+    background-color: white;
+    text-align: center;
+
+    height: 600px;
+    width: 100px 25%;
+    
+}
+
+.cards {
+    flex-direction: row;
+}
+
+#Cases {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#portfolio {
+    height: 250px;
+
+    background-image: url(img/Fundo\ geométrico\ de\ tecnologia\ _\ Vetor\ Premium.jpg);
+    background-size: 250px;
+
+    background-attachment: fixed;
+
+    position: relative;
+
+    margin-bottom: 120px;
+
+}
+
+.filtro {
+    width: 100%;
+    height: 100%;
+
+    background-color: #0B0051;
+
+    opacity: 20%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#portfolio .container-grid {
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portfolio a {
+    width: fit-content;
+
+    color: white;
+
+    font-family: "Play";
+    font-size: 28px;
+
+    z-index: 1;
+
+    transition: 200ms;
+}
+
+#portfolio a:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#contato h2 {
+    margin-bottom: 50px;
+}
+
+#contato form {
+    margin: 0 auto;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    border-radius: 0px;
+
+
+    color: black;
+    font-family: "Rajdhani";
+    font-size: 17px;
+}
+
+.campo {
+    width: 35%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 35%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+   
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+    width: 515px;
+
+    color: white;
+    background-color: #0B0051;
+
+    border: none;
+    border-radius: 17px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: #0B0051;
+
+    border: none;
+    border-radius: 17px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+
+    
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+
+    font-family: "Rajdhani";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: white;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--azul-gamificamos);
+}
+
+#contato form button {
+
+    height: 35px;
+    width: 35%;
+
+    background-color: #0B0051;
+    color: white;
+    border: none;
+    border-radius: 17px;
+
+    font-size: 17px;
+    font-family: "Rajdhani";
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+
+}
+
+
+#contato form button:hover {
+    background-color: #FFE23E;
+    color: black;
+}
+
+footer {
+
+    height: 190px;
+
+    background-color: #0B0051
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer {
+
+    height: 330px;
+
+    background-color:#0B0051
+
+
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.redes-sociais {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+    color: #fff;
+    font-family: "Play";
+    font-size: 24px;
+}
+
+.icones-redes {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a {
+    color: white;
+}
+
+.icones-redes a:hover {
+    transition: 1s;
+    color: #FFE23E
+    
+}
+
+@media screen and (max-width: 1300px) {
+    #contato form {
+
+            
+        
+
+    }
+    
+}
+
+
+
+
+
+
+
