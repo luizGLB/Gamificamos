@@ -521,8 +521,31 @@ footer .container-grid {
     }
 
     #contato form {
-        width: 75%;
+        width: 115%;
+        
+
     }
+
+    #portfolio {
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    #contato form {
+       width: 110%;
+        
+    }
+
+    #portfolio {
+        width: 110%;
+    }
+}
+
+footer {
+
+    width: 100%;
 }
 
 

@@ -21,7 +21,6 @@ function abreFechaMenu() {
         
         iconeX.style.display = "none"
 
-       
         iconeBarras.style.display = "inline"
 
     }
@@ -32,7 +31,6 @@ function abreFechaMenu() {
 onresize = () => {
     
     menu.classList.remove("menu-fechado")
-
     
     iconeBarras.style.display = "none"
 
